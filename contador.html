@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador com Função</title>
+</head>
+<body>
+    <button id="aumentar" type="button" onclick="mais()">AUMENTAR</button>
+    <button id="diminuir" type="button" onclick="menos()">DIMINUIR</button>
+    <button id="zerar" type="button" onclick="zero()">ZERAR</button>
+    <button id="x2" type="button" onclick="multi()">X2</button>
+    <button id="d3" type="button" onclick="dividir()">/3</button></br>
+
+    <button id="test" type="button" onclick="tes()">teste</button></br>
+    <input id="contador" type="number" value=""/>
+<script>
+    var cont = 0;
+    var segue = 0;
+    function tes (){
+
+        segue = (document.getElementById("contador").value);        
+        document.getElementById("contador").value = (cont + segue);
+
+        }
+
+    function mais (){
+        cont = cont + 1;
+        document.getElementById("contador").value = cont;
+ 
+        }
+
+    function menos (){
+    cont = cont - 1;
+    document.getElementById("contador").value = cont;
+    }    
+    function zero (){
+    cont = 0;
+    document.getElementById("contador").value = cont;
+        
+    }
+        
+</script>    
+</body>
+</html>
